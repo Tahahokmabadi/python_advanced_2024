@@ -1,6 +1,6 @@
 valid_number = []
 for i in range (10):
-    valid_number.appnd(str(i))
+    valid_number.append(str(i))
 
 while True:
     age = input("Please enter your age:\t")
