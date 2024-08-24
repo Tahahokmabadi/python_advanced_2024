@@ -17,4 +17,4 @@ except BaseException as e:
     print(f"An error occurred:\n{e}")
 
 finally:
-  print("Anyway, support the country!!!")
+  print("Have a great day!")
