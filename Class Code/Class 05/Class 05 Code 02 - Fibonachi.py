@@ -1,13 +1,24 @@
-def fibonachi(number):
+def fibonacci(number):
     if number == 1 or number == 2 :
         return 1
     else:
-        result = 0
-        result = result + (fibonachi(number - 1) + fibonachi(number - 2))
-        return result
+        return fibonacci(number - 1) + fibonacci(number - 2)
 
 if __name__ == "__main__":
-    input = int(input("Enter: "))
-    result = fibonachi(input)
+    while True:
+        try:
+            input_number = int(input("Enter the number of Fibonacic terms you want: "))
+            if input_number < 1:
+                print("Please enter a positive integer.")
+                continue
+ 
+            fibonacci_list = []
 
-    print(result)
+            for i in range(1, input_number + 1):
+                fibonacci_list.append(fibonacci(i))
+            print("Fibonacci sequence:")
+            print(", ".join(map(str, fibonacci_list)))
+
+
+        except ValueError:
+            print("Enter (positive) numbers only.")
