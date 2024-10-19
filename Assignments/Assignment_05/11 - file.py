@@ -1,4 +1,4 @@
-text_path = "Python Advanced 2024\\Assignments\\Assignment_05\\book_excerpt.txt"
+text_path = input("Enter the absolute pr relative path of your text file: ")
 
 word = input("What word would you like to search for in the text: ")
 
@@ -11,7 +11,7 @@ text_file.close()
 
 word_count = text_data.count(word)
 
-report_path = "Python Advanced 2024\\Assignments\\Assignment_05\\report.txt"
+report_path = "report.txt"
 report_file = open(report_path, "w")
 report_file.write(f"Total words: {count_of_words}\n")
 report_file.write(f"Total line: {count_of_lines}\n")

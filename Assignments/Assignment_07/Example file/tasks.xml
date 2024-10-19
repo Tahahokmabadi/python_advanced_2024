@@ -1,0 +1,20 @@
+<Tasks>
+    <Task>
+        <Title>Buy Groceries</Title>
+        <DueDate>2024-10-20</DueDate>
+        <Priority>High</Priority>
+        <Status>Pending</Status>
+    </Task>
+    <Task>
+        <Title>Finish Project Report</Title>
+        <DueDate>2024-10-22</DueDate>
+        <Priority>Medium</Priority>
+        <Status>Completed</Status>
+    </Task>
+    <Task>
+        <Title>Schedule Dentist Appointment</Title>
+        <DueDate>2024-10-25</DueDate>
+        <Priority>Low</Priority>
+        <Status>Pending</Status>
+    </Task>
+</Tasks>
