@@ -1,4 +1,4 @@
-text_path = input("Enter the absolute pr relative path of your text file: ")
+text_path = input("Enter the absolute or relative path of your text file: ")
 
 word = input("What word would you like to search for in the text: ")
 
