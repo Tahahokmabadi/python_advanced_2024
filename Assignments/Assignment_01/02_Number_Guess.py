@@ -1,19 +1,18 @@
 import random
 
-number = random.randint(1, 100)
-min_value = 1
-max_value = 100
+number = 1 # random.randint(1, 100)
+min_value = 0
+max_value = 101
 
 while True:
     guess = input(f"Enter a number between {min_value} and {max_value}:\t")
-        
     if not guess.isdigit():
         print("Enter numbers only.")
         continue
         
     guess = int(guess)
         
-    if guess < min_value or guess > max_value:
+    if not max_value > guess > min_value:
         print(f"You should Enter a number between {min_value} and {max_value}.")
         continue
     
@@ -22,7 +21,7 @@ while True:
         break
     elif guess > number:
         print("Guess a lower number!")
-        max_value = guess - 1
+        max_value = guess
     else:
         print("Guess a higher number!")
-        min_value = guess + 1
+        min_value = guess
