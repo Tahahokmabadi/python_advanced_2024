@@ -5,7 +5,7 @@ def cal_sum(file_path):
     sum = 0
     with open(file_path, "r", encoding="utf-8") as csv_file:
         reader = csv.reader(csv_file)
-        headers = next(reader)
+        next(reader)
         for row in reader:
             sum += float(row[3])
     return sum    
