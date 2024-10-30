@@ -12,3 +12,4 @@ while True:
     
     sum_list = list(map(lambda x, y: x + y, list_1, list_2))
     print(f"New list:\n{sum_list}")
+

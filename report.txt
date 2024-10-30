@@ -1,3 +1,3 @@
 Total words: 117
-Total line: 0
+Total line: 12
 Occurrences of "sleep": 5
